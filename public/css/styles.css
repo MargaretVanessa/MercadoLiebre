@@ -1,0 +1,178 @@
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    padding: 5%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+
+header nav{
+    font-size: 12px;
+    display: inline;
+}
+
+header ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+ 
+
+header .form .input{
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    color: #666;
+    width: 3%;
+    text-align: center;
+
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header div.input{
+    min-width:40px;
+    margin-right:55em;
+    margin-top:15px;
+}
+
+header div.submit{
+    min-width:40px;
+    margin-right:25em;
+    margin-top:15px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+article div.main-article{
+    width: 100%;
+}
+
+.price{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+    flex-grow: 0.3;
+}
+
+
+h3,
+.description{
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+}
+
+article{
+    display: inline-block;
+    max-width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main section article{
+    background-color: #fff;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+.price_discount{
+    display: inline-flex;
+}
+
+main section article i{
+ display: flex;
+ font-size: 16px;
+ padding: 5px;
+ width: 30px;
+ height: 30px;
+ border: 1px solid #39b54a;
+ background-color: #FFF;
+ border-radius: 50%;
+ position: relative;
+ right: 40%;
+ left: 80%;
+}
+
+.products{
+    display: run-in;
+    flex-wrap: wrap;
+}
+
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+footer {
+        display: block flow;
+        max-width: 350px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+}
