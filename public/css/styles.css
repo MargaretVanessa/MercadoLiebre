@@ -23,13 +23,37 @@ div.top-header{
 
 }
 
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
 header{
     background-color: #EAC926;
 }
 
 
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 40%;
+    padding: 10px;
+}
+
+
 header nav{
     font-size: 12px;
+    display: flex;
+    background-color: #EAC926;
+    max-width: 800px;
+    margin-left: 10%;
+    margin-right: 60px;
+    margin-bottom: 10px; 
 }
 
 header ul li{
@@ -50,12 +74,19 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    min-width:10px;
+    margin-right:0em;
+    margin-top:15px;
+    font-size: 13px;
 }
+
 header .form .submit{
     background-color: #FFF;
     color: #666;
-    width: 3%;
-    text-align: center;
+    min-width:50px;
+    margin-right:0em;
+    margin-top:15px;
+    
 
 }
 
@@ -65,20 +96,8 @@ header div.top-header p{
     margin-top: 10px;
 }
 
-header div.input{
-    min-width:40px;
-    margin-right:55em;
-    margin-top:15px;
-}
-
-header div.submit{
-    min-width:40px;
-    margin-right:25em;
-    margin-top:15px;
-}
-
 div.burger-menu{
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -88,18 +107,23 @@ div.burger-menu i{
     color: #FFF;
     font-size: 20px;
     height: 40px;
-    margin: 60px 30px 20px 20px;
+    margin: 30px 15px 10px 10px;
     padding: 10px;
     width: 40px;
 }
 
 article div.main-article{
     width: 100%;
+    
 }
 
 .price{
     font-size: 18px;
     flex-grow: 0.3;
+}
+
+.discount{
+    width: 70%;
 }
 
 .discount,
@@ -115,12 +139,19 @@ h3,
     color: #666;
 }
 
+.description{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 section.banner img{
     width: 100%;
 }
 
 main{
     width: 90%;
+    margin: 0 auto;
 }
 
 article{
@@ -133,6 +164,7 @@ article{
 
 main section article{
     background-color: #fff;
+    margin: 10px 0px;
 }
 
 main section article img{
@@ -145,8 +177,10 @@ main section article i,
 }
 
 .price_discount{
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    margin-left: 10px;
 }
 
 main section article i{
@@ -169,29 +203,88 @@ main section article i{
 }
 
 
-header div.logo{
-    width: 50%;
-    padding: 10px;
-}
-
 footer {
         display: flex;
         background-color: #FFF;
         max-width: 800px;
         margin-left: 20%;
         margin-right: 50px;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;  
 }
 
 .copyright {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .icons {
     width: 100%;
     text-align: center;
 
+}
+
+/*perfiles*/
+
+form {
+    padding:15px
+}
+form div {
+    padding:5px 0px
+}
+.perfilUsuario {
+    padding:10px;
+}
+
+.perfilUsuario label {
+    display:block;
+    padding :10px;
+}
+
+.categorias {
+    display:block;
+    padding:10px
+}
+
+main section article:hover .description {
+    opacity: 1;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+        opacity: 0;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space space-between;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+
+main.login input.submit:hover {
+    background-color:  #0022AA;
+    border-radius: 50px;
 }
