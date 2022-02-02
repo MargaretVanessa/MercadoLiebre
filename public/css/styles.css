@@ -1,5 +1,4 @@
 *{
-
     box-sizing: border-box;
 }
 
@@ -17,7 +16,11 @@ p{
 }
 
 div.top-header{
+    display: flex;
+    flex-wrap: wrap;
     padding: 5%;
+    padding: 5%;
+
 }
 
 header{
@@ -27,7 +30,6 @@ header{
 
 header nav{
     font-size: 12px;
-    display: inline;
 }
 
 header ul li{
@@ -35,7 +37,8 @@ header ul li{
     display: inline;
 }
 
-header ul li a{
+nav ul li a{
+    text-align: right;
     text-decoration: none;
     color: #000;
 }
@@ -76,6 +79,7 @@ header div.submit{
 
 div.burger-menu{
     text-align: center;
+    
 }
 
 div.burger-menu i{
@@ -84,7 +88,7 @@ div.burger-menu i{
     color: #FFF;
     font-size: 20px;
     height: 40px;
-    margin: 10px 0px 20px 0px;
+    margin: 60px 30px 20px 20px;
     padding: 10px;
     width: 40px;
 }
@@ -142,6 +146,7 @@ main section article i,
 
 .price_discount{
     display: inline-flex;
+    align-items: baseline;
 }
 
 main section article i{
@@ -170,9 +175,23 @@ header div.logo{
 }
 
 footer {
-        display: block flow;
-        max-width: 350px;
-        margin-left: 10px;
-        margin-right: 10px;
+        display: flex;
+        background-color: #FFF;
+        max-width: 800px;
+        margin-left: 20%;
+        margin-right: 50px;
         margin-bottom: 10px;
+        
+}
+
+.copyright {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    width: 100%;
+    text-align: center;
+
 }
